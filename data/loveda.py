@@ -73,6 +73,7 @@ class LoveDA(Dataset):
         rgb_filepath_list += glob.glob(os.path.join(image_dir, '*.png'))
         rgb_filepath_list += glob.glob(os.path.join(image_dir, '*.jpg'))
         rgb_filepath_list += glob.glob(os.path.join(image_dir, '*.jpeg'))
+        rgb_filepath_list = sorted(rgb_filepath_list) # new
         
         logger.info('%s -- Dataset images: %d' % (os.path.dirname(image_dir), len(rgb_filepath_list)))
         rgb_filename_list = [os.path.split(fp)[-1] for fp in rgb_filepath_list]
@@ -88,7 +89,8 @@ class LoveDA(Dataset):
         print(image.shape)
         image = cv2.resize(image, self.imgsz, interpolation=cv2.INTER_LINEAR)
         if len(self.cls_filepath_list) > 0:
-            mask = imread(self.cls_filepath_list[idx]) -1 # mask = imread(self.cls_filepath_list[idx]).astype(np.longlong(9**19)) -1 # np.long is deprecated after 1.20
+            # mask = imread(self.cls_filepath_list[idx]).astype(np.longlong(9**19)) -1 # np.long is deprecated after 1.20
+            mask = imread(self.cls_filepath_list[idx]) -1 # new
             mask = cv2.resize(mask, self.imgsz, interpolation=cv2.INTER_LINEAR)
             if self.transforms is not None:
                 blob = self.transforms(image=image, mask=mask)
