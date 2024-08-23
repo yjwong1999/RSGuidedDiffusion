@@ -16,6 +16,7 @@ from ever.api.data import distributed, CrossValSamplerGenerator
 import numpy as np
 import logging
 from PIL import Image
+import cv2
 
 logger = logging.getLogger(__name__)
 
@@ -52,6 +53,7 @@ def reclassify(cls):
 
 class LoveDA(Dataset):
     def __init__(self, image_dir, mask_dir, transforms=None):
+        self.imgsz = (512, 512)
         self.rgb_filepath_list = []
         self.cls_filepath_list= []
         if isinstance(image_dir, list) and isinstance(mask_dir, list):
@@ -83,8 +85,11 @@ class LoveDA(Dataset):
 
     def __getitem__(self, idx):
         image = imread(self.rgb_filepath_list[idx])
+        print(image.shape)
+        image = cv2.resize(image, self.imgsz, interpolation=cv2.INTER_LINEAR)
         if len(self.cls_filepath_list) > 0:
-            mask = imread(self.cls_filepath_list[idx]).astype(np.longlong(9**19)) -1 # np.long is deprecated after 1.20
+            mask = imread(self.cls_filepath_list[idx]) -1 # mask = imread(self.cls_filepath_list[idx]).astype(np.longlong(9**19)) -1 # np.long is deprecated after 1.20
+            mask = cv2.resize(mask, self.imgsz, interpolation=cv2.INTER_LINEAR)
             if self.transforms is not None:
                 blob = self.transforms(image=image, mask=mask)
                 image = blob['image']
