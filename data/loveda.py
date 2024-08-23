@@ -86,7 +86,6 @@ class LoveDA(Dataset):
 
     def __getitem__(self, idx):
         image = imread(self.rgb_filepath_list[idx])
-        print(image.shape)
         image = cv2.resize(image, self.imgsz, interpolation=cv2.INTER_LINEAR)
         if len(self.cls_filepath_list) > 0:
             # mask = imread(self.cls_filepath_list[idx]).astype(np.longlong(9**19)) -1 # np.long is deprecated after 1.20
