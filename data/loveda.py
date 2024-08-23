@@ -69,6 +69,8 @@ class LoveDA(Dataset):
     def batch_generate(self, image_dir, mask_dir):
         rgb_filepath_list = glob.glob(os.path.join(image_dir, '*.tif'))
         rgb_filepath_list += glob.glob(os.path.join(image_dir, '*.png'))
+        rgb_filepath_list += glob.glob(os.path.join(image_dir, '*.jpg'))
+        rgb_filepath_list += glob.glob(os.path.join(image_dir, '*.jpeg'))
         
         logger.info('%s -- Dataset images: %d' % (os.path.dirname(image_dir), len(rgb_filepath_list)))
         rgb_filename_list = [os.path.split(fp)[-1] for fp in rgb_filepath_list]
