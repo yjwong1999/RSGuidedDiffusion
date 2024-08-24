@@ -9,6 +9,11 @@ conda create --name diffusion python=3.10.12 -y
 conda activate diffusion
 ```
 
+Download Pretrained HRNet for RS Segmentation
+```bash
+curl -L -o "hrnetw32.pth" "https://www.dropbox.com/scl/fi/5au20lvw3yb5y3btnlamg/hrnetw32.pth?rlkey=eoqio6mlxtq4ykdnaa8n4dp4l&st=d4tg641s&dl=0"
+```
+
 Install Pytorch
 ```bash
 # Please adjust accordingly depending on your OS
