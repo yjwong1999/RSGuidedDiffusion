@@ -1,5 +1,6 @@
+# Remote Sensing Guided Diffusion with Limited Domain Data
 
-
+This is part of the code for our 2024 IEEE BigData Cup: Building Extraction Generalization Challenge (BEGC) solution.
 
 ## Acknowledgement
 1. 2024 IEEE BigData Cup: Building Extraction Generalization Challenge [link](https://www.kaggle.com/competitions/building-extraction-generalization-2024/overview)
