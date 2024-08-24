@@ -62,15 +62,19 @@ cd ../
 
 Diffusion
 ```bash
-CUDA_VISIBLE_DEVICES={DEVICES} python3 main.py \
+CUDA_VISIBLE_DEVICES=0 python3 main.py \
     --mode train \
     --model_type DDIM \
-    --img_size {IMAGE_SIZE} \
-    --num_img_channels {NUM_IMAGE_CHANNELS} \
+    --img_size 256 \
+    --num_img_channels 3 \
     --dataset {DATASET_NAME} \
     --img_dir {DATA_FOLDER} \
-    --train_batch_size 16 \
-    --eval_batch_size 8 \
+    --seg_dir {mask_dir} \
+    --segmentation_guided \
+    --segmentation_channel_mode single \
+    --num_segmentation_classes 7 \
+    --train_batch_size 4 \
+    --eval_batch_size 2 \
     --num_epochs 400
 ```
 
