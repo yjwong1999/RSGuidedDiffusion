@@ -5,14 +5,13 @@ This is part of the code for our 2024 IEEE BigData Cup: Building Extraction Gene
 ## Setup
 Conda environment
 ```bash
-conda create --name begc python=3.10.12 -y
-conda activate begc
-
-cd RSGuidedDiffusion
+conda create --name diffusion python=3.10.12 -y
+conda activate diffusion
 ```
 
-Install dependencies
+Install Pytorch
 ```bash
+# Please adjust accordingly depending on your OS
 pip install torch==2.2.1 torchvision==0.17.1 torchaudio==2.2.1 --index-url https://download.pytorch.org/whl/cu121
 ```
 
