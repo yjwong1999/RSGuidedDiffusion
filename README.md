@@ -31,7 +31,7 @@ curl -L -o "hrnetw32.pth" "https://www.dropbox.com/scl/fi/5au20lvw3yb5y3btnlamg/
 
 # move the pretrained weights to the designated directory
 mkdir -vp ./log/
-mv "{cwd}/hrnetw32.pth" "./log/hrnetw32.pth"
+mv "hrnetw32.pth" "./log/hrnetw32.pth"
 ```
 
 
