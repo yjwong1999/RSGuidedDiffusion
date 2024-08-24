@@ -19,6 +19,8 @@ pip install jupyter notebook==7.1.0
 
 # Remaining dependencies
 pip install opendatasets==0.1.22
+pip install ever-beta==0.2.3
+pip install git+https://github.com/qubvel/segmentation_models.pytorch
 ```
 
 
