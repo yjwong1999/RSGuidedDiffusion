@@ -1,9 +1,10 @@
-from PIL import Image
+import matplotlib.pyplot as plt
 import numpy as np
+from collections import OrderedDict
 
-COLOR_MAP = dict(
-    IGNORE=(0, 0, 0),
-    Background=(255, 255, 255),
+# color map
+COLOR_MAP = OrderedDict(
+    Background=(60,20,90),
     Building=(255, 0, 0),
     Road=(255, 255, 0),
     Water=(0, 0, 255),
@@ -11,17 +12,16 @@ COLOR_MAP = dict(
     Forest=(0, 255, 0),
     Agricultural=(255, 195, 128),
 )
+CLASS = list(COLOR_MAP.keys())
 
+# convert to color
+def convert_to_color(pred):
+    arr_3d = np.zeros((pred.shape[0], pred.shape[1], 3), dtype=np.uint8)
 
-def render(mask_path, vis_path):
-    new_mask = np.array(Image.open(mask_path)).astype(np.uint8)
-    cm = np.array(list(COLOR_MAP.values())).astype(np.uint8)
-    color_img = cm[new_mask]
-    color_img = Image.fromarray(np.uint8(color_img))
-    color_img.save(vis_path)
+    for i in range(len(CLASS)):
+        m = pred == i
+        arr_3d[m] = COLOR_MAP[CLASS[i]]
 
+    return arr_3d
 
-if __name__ == '__main__':
-    mask_path = r'C:\Users\86158\Desktop\Wujin_9_6.png'
-    vis_path = r'C:\Users\86158\Desktop\Wujin_9_6_vis.png'
-    render(mask_path, vis_path)
+%cd ../
