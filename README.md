@@ -13,6 +13,7 @@ Clone this repo
 ```bash
 # clone this repo
 git clone https://github.com/DoubleY-BEGC2024/RSGuidedDiffusion.git
+cd RSGuidedDiffusion
 ```
 
 Install Pytorch
