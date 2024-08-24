@@ -85,7 +85,7 @@ def polygons2mask(img, polygons):
 #---------------------------------------------------------
 # Generate mask for the given image_dir and label_dir
 #---------------------------------------------------------
-def generate_mask(image_dir, label_dir, dataloader, mode, edge=False, plot=True, save_dir=None):
+def generate_mask(model, image_dir, label_dir, dataloader, mode, edge=False, plot=True, save_dir=None):
     #---------------------------------------------------------
     # Assertion
     #---------------------------------------------------------
