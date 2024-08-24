@@ -34,7 +34,8 @@ mkdir -vp ./log/
 mv "hrnetw32.pth" "./log/hrnetw32.pth"
 
 # Make a soft link from the Building Footprint dataset into the "segmentation/LoveDA" directory
-ln -s "building-extraction-generalization-2024" ./LoveDA
+mkdir -vp ./LoveDA/
+ln -s "../building-extraction-generalization-2024" ./LoveDA
 ```
 
 
