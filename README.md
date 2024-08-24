@@ -60,6 +60,20 @@ python3 run.py
 cd ../
 ```
 
+Diffusion
+```bash
+CUDA_VISIBLE_DEVICES={DEVICES} python3 main.py \
+    --mode train \
+    --model_type DDIM \
+    --img_size {IMAGE_SIZE} \
+    --num_img_channels {NUM_IMAGE_CHANNELS} \
+    --dataset {DATASET_NAME} \
+    --img_dir {DATA_FOLDER} \
+    --train_batch_size 16 \
+    --eval_batch_size 8 \
+    --num_epochs 400
+```
+
 
 ## Acknowledgement
 1. 2024 IEEE BigData Cup: Building Extraction Generalization Challenge [link](https://www.kaggle.com/competitions/building-extraction-generalization-2024/overview)
