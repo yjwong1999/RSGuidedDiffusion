@@ -1,4 +1,29 @@
+import ever as er
+import torch
+from ever.core.checkpoint import remove_module_prefix
+from ever.core.config import import_config
+from ever.core.builder import make_model, make_dataloader
+from tqdm import tqdm
+
 from utils import generate_mask
+
+#---------------------------------------------------------
+# Load HRNet
+#---------------------------------------------------------
+# register
+er.registry.register_all()
+
+# load the config
+config_path = 'baseline.hrnetw32'
+cfg = import_config(config_path)
+
+# load the model
+statedict = torch.load('./log/hrnetw32.pth', map_location=lambda storage, loc: storage)
+model_state_dict = remove_module_prefix(statedict)
+model = make_model(cfg['model'])
+model.load_state_dict(model_state_dict)
+model.cuda()
+model.eval()
 
 #---------------------------------------------------------
 # Training images
