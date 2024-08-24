@@ -13,12 +13,14 @@ Install Pytorch
 ```bash
 # Please adjust accordingly depending on your OS
 pip install torch==2.2.1 torchvision==0.17.1 torchaudio==2.2.1 --index-url https://download.pytorch.org/whl/cu121
+
+# Install Jupyter Notebook
+pip install jupyter notebook==7.1.0
+
+# Remaining dependencies
+pip install opendatasets==0.1.22
 ```
 
-Install Jupyter Notebook
-```
-pip install jupyter notebook==7.1.0
-```
 
 ## Acknowledgement
 1. 2024 IEEE BigData Cup: Building Extraction Generalization Challenge [link](https://www.kaggle.com/competitions/building-extraction-generalization-2024/overview)
