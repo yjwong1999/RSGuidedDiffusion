@@ -47,6 +47,9 @@ ln -s "../building-extraction-generalization-2024" ./LoveDA
 # copy the label data into LoveDA
 cp -r "../detect/train/label" ./LoveDA/train
 cp -r "../detect/val/label" ./LoveDA/val
+
+# run the segmentation code
+python3 run.py
 ```
 
 
