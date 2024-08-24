@@ -5,7 +5,7 @@ This is part of the code for our 2024 IEEE BigData Cup: Building Extraction Gene
 ## Setup
 Conda environment
 ```bash
-conda create --name begc python=3.8.10 -y
+conda create --name begc python=3.10.12 -y
 conda activate begc
 
 cd RSGuidedDiffusion
