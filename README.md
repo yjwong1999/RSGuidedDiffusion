@@ -69,8 +69,8 @@ CUDA_VISIBLE_DEVICES=0 python3 main.py \
     --img_size 256 \
     --num_img_channels 3 \
     --dataset BEGC \
-    --img_dir {current_dir}/segmentation/diffusion_data/data \
-    --seg_dir {current_dir}/segmentation/diffusion_data/mask \
+    --img_dir ${current_dir}/segmentation/diffusion_data/data \
+    --seg_dir ${current_dir}/segmentation/diffusion_data/mask \
     --segmentation_guided \
     --segmentation_channel_mode single \
     --num_segmentation_classes 7 \
