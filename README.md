@@ -74,7 +74,7 @@ CUDA_VISIBLE_DEVICES=0 python3 main.py \
     --segmentation_guided \
     --segmentation_channel_mode single \
     --num_segmentation_classes 7 \
-    --train_batch_size 4 \
+    --train_batch_size 2 \
     --eval_batch_size 2 \
     --num_epochs 400
 ```
