@@ -7,6 +7,8 @@ import matplotlib.pyplot as plt
 from tqdm import tqdm
 from collections import OrderedDict
 
+from reder import COLOR_MAP, convert_to_color
+
 
 #---------------------------------------------------------
 # get img and polygons for the given image_path and label_path
