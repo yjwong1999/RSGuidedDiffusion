@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 from tqdm import tqdm
 from collections import OrderedDict
 
-from reder import COLOR_MAP, convert_to_color
+from render import COLOR_MAP, convert_to_color
 
 
 #---------------------------------------------------------
