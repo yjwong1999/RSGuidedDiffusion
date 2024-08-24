@@ -23,5 +23,3 @@ def convert_to_color(pred):
         arr_3d[m] = COLOR_MAP[CLASS[i]]
 
     return arr_3d
-
-%cd ../
