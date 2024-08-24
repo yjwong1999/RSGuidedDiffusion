@@ -50,6 +50,7 @@ cp -r "../detect/val/label" ./LoveDA/val
 
 # run the segmentation code
 python3 run.py
+cd ../
 ```
 
 
