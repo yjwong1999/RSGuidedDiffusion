@@ -76,6 +76,9 @@ def main(
         model_type=model_type,
         resume_epoch=resume_epoch,
         use_ablated_segmentations=use_ablated_segmentations
+        gradient_accumulation_steps = 1, # new
+        save_image_epochs = 1, # new
+        save_model_epochs = 1, # new
     )
 
     load_images_as_np_arrays = False
