@@ -2,6 +2,13 @@
 
 This is part of the code for our 2024 IEEE BigData Cup: Building Extraction Generalization Challenge (BEGC) solution.
 
+## Setup
+Conda environment
+```bash
+conda create --name begc python=3.8.10 -y
+conda activate begc
+```
+
 ## Acknowledgement
 1. 2024 IEEE BigData Cup: Building Extraction Generalization Challenge [link](https://www.kaggle.com/competitions/building-extraction-generalization-2024/overview)
 2. Remote Sensing Segmentation [code](https://github.com/Junjue-Wang/LoveDA/tree/master/Semantic_Segmentation)
