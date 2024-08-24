@@ -7,6 +7,8 @@ Conda environment
 ```bash
 conda create --name begc python=3.8.10 -y
 conda activate begc
+
+cd RSGuidedDiffusion
 ```
 
 ## Acknowledgement
