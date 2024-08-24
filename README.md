@@ -1,6 +1,6 @@
 # Remote Sensing Guided Diffusion with Limited Domain Data
 
-This is part of the code for our 2024 IEEE BigData Cup: Building Extraction Generalization Challenge (BEGC) solution.
+This code is part of our solution for 2024 IEEE BigData Cup: Building Extraction Generalization Challenge (BEGC).
 
 ## Setup
 Conda environment
