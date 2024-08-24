@@ -32,6 +32,9 @@ curl -L -o "hrnetw32.pth" "https://www.dropbox.com/scl/fi/5au20lvw3yb5y3btnlamg/
 # move the pretrained weights to the designated directory
 mkdir -vp ./log/
 mv "hrnetw32.pth" "./log/hrnetw32.pth"
+
+# Make a soft link from the Building Footprint dataset into the "segmentation/LoveDA" directory
+ln -s "building-extraction-generalization-2024" ./LoveDA
 ```
 
 
