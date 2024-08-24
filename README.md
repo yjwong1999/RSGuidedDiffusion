@@ -24,11 +24,18 @@ pip install torch==2.2.1 torchvision==0.17.1 torchaudio==2.2.1 --index-url https
 # Install Jupyter Notebook
 pip install jupyter notebook==7.1.0
 
-# Remaining dependencies
+# Remaining dependencies (for segmentation)
 pip install opendatasets==0.1.22
 pip install ever-beta==0.2.3
 pip install git+https://github.com/qubvel/segmentation_models.pytorch
 pip install pycocotools requests click
+
+# Remaining dependencies (for diffusion)
+pip install diffusers==0.21.4
+pip install datasets==2.14.5
+pip install transformers==4.33.2
+pip install tensorboard==2.14.0
+pip install safetensors==0.4.4
 ```
 
 Setup Segmentation
