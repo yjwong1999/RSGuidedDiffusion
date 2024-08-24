@@ -9,6 +9,7 @@ conda create --name diffusion python=3.10.12 -y
 conda activate diffusion
 ```
 
+Clone this repo
 ```bash
 # clone this repo
 git clone https://github.com/DoubleY-BEGC2024/RSGuidedDiffusion.git
