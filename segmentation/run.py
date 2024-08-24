@@ -41,7 +41,7 @@ image_dir = "LoveDA/train/image"
 label_dir = "LoveDA/train/label"
 
 # generate mask
-generate_mask(image_dir, label_dir, dataloader, mode='train', edge=False, plot=False, save_dir='diffusion_data')
+generate_mask(model, image_dir, label_dir, dataloader, mode='train', edge=False, plot=False, save_dir='diffusion_data')
 
 
 #---------------------------------------------------------
@@ -60,4 +60,4 @@ image_dir = "LoveDA/val/image"
 label_dir = "LoveDA/val/label"
 
 # generate mask
-generate_mask(image_dir, label_dir, dataloader, mode='val', edge=False, plot=False, save_dir='diffusion_data')
+generate_mask(model, image_dir, label_dir, dataloader, mode='val', edge=False, plot=False, save_dir='diffusion_data')
