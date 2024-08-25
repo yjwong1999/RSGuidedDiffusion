@@ -44,6 +44,7 @@ Setup the dataset
 # Make sure you have your Kaggle authentication
 # {"username":"yjwong99","key":"5708a20c5643d05827b398dce05031bc"}
 
+# run the code
 python setup_data.py
 ```
 
