@@ -141,3 +141,5 @@ yaml_file = f'{cwd}/mydata/data.yaml'
 with open(yaml_file, 'w') as file:
     for item in yaml_config:
         file.write(item + '\n')
+
+print('Done setting up the dataset!')
