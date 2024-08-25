@@ -16,9 +16,9 @@ git clone https://github.com/DoubleY-BEGC2024/RSGuidedDiffusion.git
 cd RSGuidedDiffusion
 ```
 
-Install Pytorch
+Install dependencies
 ```bash
-# Please adjust accordingly depending on your OS
+# Please adjust the torch version accordingly depending on your OS
 pip install torch==2.2.1 torchvision==0.17.1 torchaudio==2.2.1 --index-url https://download.pytorch.org/whl/cu121
 
 # Install Jupyter Notebook
