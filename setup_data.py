@@ -105,6 +105,7 @@ print('Restructuring the dataset into directory "mydata" for YOLOv8 training')
 print('#-----------------------------------------------------------------------------------\n')
 
 # creating the directory
+print('Creating the "mydata" directory ...\n')
 os.makedirs(f'{cwd}/mydata')
 os.makedirs(f'{cwd}/mydata/images')
 os.makedirs(f'{cwd}/mydata/labels')
@@ -115,7 +116,8 @@ os.makedirs(f'{cwd}/mydata/labels/train')
 os.makedirs(f'{cwd}/mydata/labels/val')
 
 
-# copy the content from "mydata" directory
+# copy the content from "detect" directory
+print('Copying the contents from "detect" ...\n')
 shutil.copytree(f'{cwd}/detect/train/image', f'{cwd}/mydata/images/train', dirs_exist_ok=True)
 shutil.copytree(f'{cwd}/detect/val/image', f'{cwd}/mydata/images/val', dirs_exist_ok=True)
 
@@ -124,6 +126,7 @@ shutil.copytree(f'{cwd}/detect/val/label', f'{cwd}/mydata/labels/val', dirs_exis
 
 
 # get ready the yaml file for the dataset
+print('Creating the YOLOv8 yaml file for the dataset ...\n')
 yaml_config = [
     f"path: {cwd}/mydata",
     "train: images/train",
