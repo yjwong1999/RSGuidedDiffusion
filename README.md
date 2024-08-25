@@ -38,6 +38,16 @@ pip install tensorboard==2.14.0
 pip install safetensors==0.4.4
 ```
 
+
+Setup the dataset
+```bash
+# Make sure you have your Kaggle authentication
+# {"username":"yjwong99","key":"5708a20c5643d05827b398dce05031bc"}
+
+python setup_data.py
+```
+
+
 Setup Segmentation
 ```bash
 # Get Pretrained HRNet weights
