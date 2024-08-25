@@ -27,17 +27,20 @@ cwd = os.getcwd()
 # Download the raw data from Kaggle
 #---------------------------------------------------------
 # download the data
-print('\n#-----------------------------------------------------------------------------------')
+print('\n\n#-----------------------------------------------------------------------------------')
 print('Download the Building Extraction Generalization 2024 Dataset from kaggle')
+print('#-----------------------------------------------------------------------------------\n')
 
 od.download("https://www.kaggle.com/competitions/building-extraction-generalization-2024/data")
 
 
 #---------------------------------------------------------
-# Restructure the dataset
+# Restructure the dataset for segmentation and diffusion
 #---------------------------------------------------------
-print('\n#-----------------------------------------------------------------------------------')
+print('\n\n#-----------------------------------------------------------------------------------')
 print('Restructuring the dataset into directory "detect" for segmentation/diffusion')
+print('#-----------------------------------------------------------------------------------\n')
+
 # remove directory if exist
 if os.path.exists('detect'):
     shutil.rmtree('detect') 
@@ -95,7 +98,43 @@ for filename in os.listdir(src_dir):
         os.remove(src_path)
 
 #---------------------------------------------------------
-#
+# Restructuring the dataset for YOLOv8 Training
 #---------------------------------------------------------
-print('\n#-----------------------------------------------------------------------------------')
+print('\n\n#-----------------------------------------------------------------------------------')
 print('Restructuring the dataset into directory "mydata" for YOLOv8 training')
+print('#-----------------------------------------------------------------------------------\n')
+
+# creating the directory
+os.makedirs(f'{cwd}/mydata')
+os.makedirs(f'{cwd}/mydata/images')
+os.makedirs(f'{cwd}/mydata/labels')
+
+os.makedirs(f'{cwd}/mydata/images/train')
+os.makedirs(f'{cwd}/mydata/images/val')
+os.makedirs(f'{cwd}/mydata/labels/train')
+os.makedirs(f'{cwd}/mydata/labels/val')
+
+
+# copy the content from "mydata" directory
+shutil.copytree(f'{cwd}/detect/train/image', f'{cwd}/mydata/images/train', dirs_exist_ok=True)
+shutil.copytree(f'{cwd}/detect/val/image', f'{cwd}/mydata/images/val', dirs_exist_ok=True)
+
+shutil.copytree(f'{cwd}/detect/train/label', f'{cwd}/mydata/labels/train', dirs_exist_ok=True)
+shutil.copytree(f'{cwd}/detect/val/label', f'{cwd}/mydata/labels/val', dirs_exist_ok=True)
+
+
+# get ready the yaml file for the dataset
+yaml_config = [
+    f"path: {cwd}/mydata",
+    "train: images/train",
+    "val: images/val",
+    "",
+    "names: ",
+    "  0: 'building'"
+]
+
+# save annotation as txt file
+yaml_file = f'{cwd}/mydata/data.yaml'
+with open(yaml_file, 'w') as file:
+    for item in yaml_config:
+        file.write(item + '\n')
