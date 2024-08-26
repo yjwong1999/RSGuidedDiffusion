@@ -95,8 +95,8 @@ Please put your training images in some dataset directory `DATA_FOLDER`, organiz
 ``` 
 DATA_FOLDER
 ├── train
-│   ├── tr_1.jpg
-│   ├── tr_2.jpg
+│   ├── train_1.jpg
+│   ├── train_2.jpg
 │   └── ...
 ├── val
 │   ├── val_1.jpg
@@ -113,8 +113,8 @@ Please put your segmentation masks in a similar directory structure in a separat
 MASK_FOLDER
 ├── all
 │   ├── train
-│   │   ├── tr_1.jpg
-│   │   ├── tr_2.jpg
+│   │   ├── train_1.jpg
+│   │   ├── train_2.jpg
 │   │   └── ...
 │   ├── val
 │   │   ├── val_1.jpg
