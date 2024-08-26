@@ -90,6 +90,43 @@ CUDA_VISIBLE_DEVICES=0 python3 main.py \
     --num_epochs 400
 ```
 
+## Optional: Custom Dataset
+Please put your training images in some dataset directory `DATA_FOLDER`, organized into train, validation and test split subdirectories. The images should be in a format that PIL can read (e.g. `.png`, `.jpg`, etc.). For example:
+``` 
+DATA_FOLDER
+├── train
+│   ├── tr_1.png
+│   ├── tr_2.png
+│   └── ...
+├── val
+│   ├── val_1.png
+│   ├── val_2.png
+│   └── ...
+└── test
+    ├── ts_1.png
+    ├── ts_2.png
+    └── ...
+```
+
+Please put your segmentation masks in a similar directory structure in a separate folder `MASK_FOLDER`, with a subdirectory `all` that contains the split subfolders, as shown below. **Each segmentation mask should have the same filename as its corresponding image in `DATA_FOLDER`, and should be saved with integer values starting at zero for each object class, i.e., 0, 1, 2,...**. Note that class 0 should represent the background (if available).
+``` 
+MASK_FOLDER
+├── all
+│   ├── train
+│   │   ├── tr_1.png
+│   │   ├── tr_2.png
+│   │   └── ...
+│   ├── val
+│   │   ├── val_1.png
+│   │   ├── val_2.png
+│   │   └── ...
+│   └── test
+│       ├── ts_1.png
+│       ├── ts_2.png
+│       └── ...
+```
+
+
 ## Troubleshooting/Bugfixing
 - Some users have reported a [bug](https://github.com/mazurowski-lab/segmentation-guided-diffusion/issues/11) when the model attempts to save during training and they receive an error of `module 'safetensors' has no attribute 'torch'`. This appears to be an issue with the `diffusers` library itself in some environments, and may be remedied by [this proposed solution](https://github.com/mazurowski-lab/segmentation-guided-diffusion/issues/11#issuecomment-2251890600).
 
