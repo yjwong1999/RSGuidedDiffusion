@@ -90,6 +90,9 @@ CUDA_VISIBLE_DEVICES=0 python3 main.py \
     --num_epochs 400
 ```
 
+## Troubleshooting/Bugfixing
+- Some users have reported a [bug](https://github.com/mazurowski-lab/segmentation-guided-diffusion/issues/11) when the model attempts to save during training and they receive an error of `module 'safetensors' has no attribute 'torch'`. This appears to be an issue with the `diffusers` library itself in some environments, and may be remedied by [this proposed solution](https://github.com/mazurowski-lab/segmentation-guided-diffusion/issues/11#issuecomment-2251890600).
+
 
 ## Acknowledgement
 1. 2024 IEEE BigData Cup: Building Extraction Generalization Challenge [link](https://www.kaggle.com/competitions/building-extraction-generalization-2024/overview)
