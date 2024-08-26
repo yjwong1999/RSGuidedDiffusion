@@ -103,8 +103,8 @@ DATA_FOLDER
 │   ├── val_2.jpg
 │   └── ...
 └── test
-    ├── ts_1.jpg
-    ├── ts_2.jpg
+    ├── test_1.jpg
+    ├── test_2.jpg
     └── ...
 ```
 
@@ -121,8 +121,8 @@ MASK_FOLDER
 │   │   ├── val_2.jpg
 │   │   └── ...
 │   └── test
-│       ├── ts_1.jpg
-│       ├── ts_2.jpg
+│       ├── test_1.jpg
+│       ├── test_2.jpg
 │       └── ...
 ```
 
