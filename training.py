@@ -115,10 +115,11 @@ def train_loop(config, model, noise_scheduler, optimizer, train_dataloader, eval
             loss = F.mse_loss(noise_pred, noise)
             loss.backward()
 
-            nn.utils.clip_grad_norm_(model.parameters(), 1.0)
-            optimizer.step()
-            lr_scheduler.step()
-            optimizer.zero_grad()
+            if (step + 1) % config.gradient_accumulation_steps == 0:
+                nn.utils.clip_grad_norm_(model.parameters(), 1.0)
+                optimizer.step()
+                lr_scheduler.step()
+                optimizer.zero_grad()
 
             # also train on target domain images if conditional
             # (we don't have masks for this domain, so we can't do segmentation-guided; just use blank masks)
