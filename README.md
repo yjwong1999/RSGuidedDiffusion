@@ -2,7 +2,7 @@
 
 This code is part of our solution for 2024 IEEE BigData Cup: Building Extraction Generalization Challenge (BEGC).
 
-## Setup
+## Instructions
 Conda environment
 ```bash
 conda create --name diffusion python=3.10.12 -y
