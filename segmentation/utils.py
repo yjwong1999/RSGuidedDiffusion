@@ -216,7 +216,8 @@ def generate_mask(model, image_dir, label_dir, dataloader, mode, edge=False, plo
         #---------------------------------------------------------
         # save
         #---------------------------------------------------------
-        if save_dir is not None:
+        background_percentage = count_background_percentage(masked_array)
+        if (save_dir is not None) and (background_percentage < 55):
             basename = os.path.basename(image_path)
 
             # img = img.astype(np.uint8)  # Convert to uint8 format
