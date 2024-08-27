@@ -95,7 +95,7 @@ def count_background_percentage(array):
     # Calculate the percentage of zeros
     percentage_zeros = (num_zeros / total_elements) * 100
     
-    return num_zeros, percentage_zeros    
+    return percentage_zeros    
     
 
 #---------------------------------------------------------
