@@ -211,7 +211,7 @@ def generate_mask(model, image_dir, label_dir, dataloader, mode, edge=False, plo
             plt.imshow(convert_to_color(masked_array))
             plt.xticks([]), plt.yticks([])
             plt.show()
-            print(count_background_percentage(masked_array))
+            print(f'\nBackground percentage {count_background_percentage(masked_array)}\n')
 
         #---------------------------------------------------------
         # save
