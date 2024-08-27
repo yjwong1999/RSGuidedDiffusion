@@ -83,6 +83,22 @@ def polygons2mask(img, polygons):
 
 
 #---------------------------------------------------------
+# Count background (class=0) percentage
+#---------------------------------------------------------
+def count_background_percentage(array):
+    # Count the number of zeros in the array
+    num_zeros = np.count_nonzero(array == 0)
+    
+    # Calculate the total number of elements in the array
+    total_elements = array.size
+    
+    # Calculate the percentage of zeros
+    percentage_zeros = (num_zeros / total_elements) * 100
+    
+    return num_zeros, percentage_zeros    
+    
+
+#---------------------------------------------------------
 # Generate mask for the given image_dir and label_dir
 #---------------------------------------------------------
 def generate_mask(model, image_dir, label_dir, dataloader, mode, edge=False, plot=True, save_dir=None):
