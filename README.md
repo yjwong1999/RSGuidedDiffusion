@@ -90,6 +90,23 @@ CUDA_VISIBLE_DEVICES=0 python3 main.py \
     --num_epochs 100
 ```
 
+Test Diffusion Model
+```bash
+current_dir=$(pwd)
+CUDA_VISIBLE_DEVICES=0 python3 main.py \
+    --mode eval_many \
+    --model_type DDIM \
+    --img_size 256 \
+    --num_img_channels 3 \
+    --dataset BEGC \
+    --eval_batch_size 1 \
+    --eval_sample_size 100 \
+    --seg_dir ${current_dir}/segmentation/diffusion_data/mask \
+    --segmentation_guided \
+    --segmentation_channel_mode single \
+    --num_segmentation_classes 7 
+```
+
 ## Optional: Custom Dataset
 Please put your training images in some dataset directory `DATA_FOLDER`, organized into train, validation and test split subdirectories. The images should be in a format that PIL can read (e.g. `.png`, `.jpg`, etc.). For example:
 ``` 
