@@ -107,6 +107,11 @@ CUDA_VISIBLE_DEVICES=0 python3 main.py \
     --num_segmentation_classes 7 
 ```
 
+Download Pretrained Model (prefered)
+```bash
+curl -L -o "ddim-BEGC-256-segguided.zip" "https://www.dropbox.com/scl/fi/86i7mvr3fe1rkgejdewcj/ddim-BEGC-256-segguided.zip?rlkey=eugkdfero832mecdu9mdk0fio&st=k245vc5h&dl=0"
+```
+
 ## Optional: Custom Dataset
 Please put your training images in some dataset directory `DATA_FOLDER`, organized into train, validation and test split subdirectories. The images should be in a format that PIL can read (e.g. `.png`, `.jpg`, etc.). For example:
 ``` 
