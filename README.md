@@ -2,7 +2,7 @@
 
 This code is part of our solution for [2024 IEEE BigData Cup: Building Extraction Generalization Challenge (BEGC)](https://www.kaggle.com/competitions/building-extraction-generalization-2024/overview). Specifically, this repo provides a segmentation-guided diffusion model to transform the given input land cover segmentation masks into realistic images. These images, along with the segmentation masks (labels), can then be used to train a building extraction instance segmentation model. Essentially, this is a diffusion augmentation technique tailored for the building extraction task.
 
-![methodology](https://github.com/yjwong1999/EY-challenge-2024/blob/main/Team%20Double%20Y%20-%20Methodology.jpg?raw=true)
+![methodology](https://github.com/DoubleY-BEGC2024/RSGuidedDiffusion/blob/main/assets/Segmentation%20Guided%20Diffusion.jpg?raw=true)
 
 ## Instructions
 Conda environment
