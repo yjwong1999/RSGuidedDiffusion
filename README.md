@@ -2,6 +2,8 @@
 
 This code is part of our solution for 2024 IEEE BigData Cup: Building Extraction Generalization Challenge (BEGC).
 
+This competition embarks on this challenge by utilizing a building footprint dataset from the Tokyo area as the primary training set, with plans to extend testing to other Japanese regions. This approach aims to inspire the development of models with robust generalization capabilities, capable of overcoming the hurdles of automatic building footprint detection and extraction across various landscapes.
+
 ## Instructions
 Conda environment
 ```bash
