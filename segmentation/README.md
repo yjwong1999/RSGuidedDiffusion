@@ -2,6 +2,8 @@
 
 ## Class Map
 
+We follow the class mapping similar to [LoveDA dataset](https://github.com/Junjue-Wang/LoveDA/tree/master/Semantic_Segmentation)
+
 ```python
 # color map
 COLOR_MAP = OrderedDict(
