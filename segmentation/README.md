@@ -1,6 +1,6 @@
 # Pretrained Remote Sensing Semantic Segmentation
 
-We use LoveDA's [pretrained hrnetw32](https://drive.google.com/drive/folders/1xFn1d8a4Hv4il52hLCzjEy_TY31RdRtg?usp=sharing). For simplicity's sake, we have uploaded the pretrained weigths to our project's dropbox, which is easier to be downloaded using curl command. Please refer the README in the homepage.
+We use LoveDA's [pretrained hrnetw32](https://drive.google.com/drive/folders/1xFn1d8a4Hv4il52hLCzjEy_TY31RdRtg?usp=sharing). For simplicity's sake, we have uploaded the pretrained weigths to our project's dropbox, which is easier to be downloaded using curl command. Please refer the [README](https://github.com/DoubleY-BEGC2024/RSGuidedDiffusion/tree/main#) in the homepage.
 
 ## Class Map
 
