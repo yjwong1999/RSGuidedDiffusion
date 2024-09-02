@@ -1,10 +1,10 @@
 # Pretrained Remote Sensing Semantic Segmentation
 
-We use LoveDA's pretrained
+We use LoveDA's [pretrained hrnetw32](https://drive.google.com/drive/folders/1xFn1d8a4Hv4il52hLCzjEy_TY31RdRtg?usp=sharing). For simplicity's sake, we have uploaded the pretrained weigths to our project's 
 
 ## Class Map
 
-We follow the class mapping similar to [LoveDA dataset](https://github.com/Junjue-Wang/LoveDA/tree/master/Semantic_Segmentation)
+We follow the class mapping similar to [LoveDA Semantic Segmentation Challenge](https://github.com/Junjue-Wang/LoveDA/tree/master/Semantic_Segmentation)
 
 ```python
 # color map
