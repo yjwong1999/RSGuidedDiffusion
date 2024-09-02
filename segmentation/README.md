@@ -1,4 +1,6 @@
+# Pretrained Remote Sensing Semantic Segmentation
 
+We use LoveDA's pretrained
 
 ## Class Map
 
