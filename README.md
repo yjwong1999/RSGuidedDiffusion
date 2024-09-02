@@ -1,7 +1,5 @@
 # Remote Sensing Guided Diffusion with Limited Domain Data
 
-#### By [Yi Jie WONG](https://github.com/yjwong1999) et al
-
 <h5 align="right">by <a href="https://github.com/yjwong1999">Yi-Jie Wong</a>, and <a href="">Yi-Jie Wong</a></h5>
 
 
