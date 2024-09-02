@@ -1,4 +1,4 @@
-# Remote Sensing Guided Diffusion with Limited Domain Data
+# Guided Diffusion with Segmentation Mask for Building Generation using Limited Domain Data
 
 #### By [Yi Jie WONG](https://github.com/yjwong1999) et al
 
