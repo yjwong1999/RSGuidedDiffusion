@@ -159,6 +159,7 @@ MASK_FOLDER
 
 ## Limitation
 1. The segmentation mask generated using the LoveDA's [pretrained hrnetw32](https://drive.google.com/drive/folders/1xFn1d8a4Hv4il52hLCzjEy_TY31RdRtg?usp=sharing) is not perfect. In fact, it missed a lot of segmentation, most likely due to the different data distributions between the LoveDA dataset and the IEEE BEGC2024 dataset. However, it is still better than nothing. Currently, this is the best pretrained model that can at least segment the IEEE BEGC2024 dataset at an acceptable level. Feel free to try other/better segmentation models!
+2. Due to resource constraints, we are only able to train our diffusion model using a batch size of 2 (accumulated to a batch size of 16) with a 256 image size. We suggest those interested in trying our code use a better GPU with higher RAM to train the model using a higher batch size and higher image resolution.
 
 
 ## Troubleshooting/Bugfixing
