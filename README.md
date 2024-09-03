@@ -156,6 +156,10 @@ MASK_FOLDER
 
 ![Sample Images](https://github.com/DoubleY-BEGC2024/RSGuidedDiffusion/blob/main/assets/Samples%20of%20Diffusion%20Data.png?raw=true)
 
+## Limitation
+
+The segmentation mask generated using the 
+
 ## Troubleshooting/Bugfixing
 - You might receive an error of `module 'safetensors' has no attribute 'torch'`. This appears to be an issue with the `diffusers` library itself in some environments, and may be mitigated by [this proposed solution](https://github.com/mazurowski-lab/segmentation-guided-diffusion/issues/11#issuecomment-2251890600).
 - It is preferable to save your images/masks in .jpg format. I tried saving the masks in .png format, but the code automatically converts the values (object class) from integer to float. Hence, the easiest workaround is to use .jpg format, although this comes with a slight sacrifice in image quality.
