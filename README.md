@@ -1,5 +1,3 @@
-# Guided Diffusion with Segmentation Mask for Building Generation using Limited Domain Data
-
 # Segmentation-Guided Diffusion Models for Label-Efficient Fine-Tuning for Remote Sensing Building Segmentation
 
 #### By [Yi Jie WONG](https://github.com/yjwong1999) et al
