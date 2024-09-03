@@ -156,9 +156,10 @@ MASK_FOLDER
 
 ![Sample Images](https://github.com/DoubleY-BEGC2024/RSGuidedDiffusion/blob/main/assets/Samples%20of%20Diffusion%20Data.png?raw=true)
 
-## Limitation
 
-The segmentation mask generated using the 
+## Limitation
+1. The segmentation mask generated using the LoveDA's [pretrained hrnetw32](https://drive.google.com/drive/folders/1xFn1d8a4Hv4il52hLCzjEy_TY31RdRtg?usp=sharing) is not perfect. In fact, it missed a lot of segmentation, most likely due to the different data distributions between the LoveDA dataset and the IEEE BEGC2024 dataset. However, it is still better than nothing. Currently, this is the best pretrained model that can at least segment the IEEE BEGC2024 dataset at an acceptable level. Feel free to try other/better segmentation models!
+
 
 ## Troubleshooting/Bugfixing
 - You might receive an error of `module 'safetensors' has no attribute 'torch'`. This appears to be an issue with the `diffusers` library itself in some environments, and may be mitigated by [this proposed solution](https://github.com/mazurowski-lab/segmentation-guided-diffusion/issues/11#issuecomment-2251890600).
