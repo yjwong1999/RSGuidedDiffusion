@@ -207,12 +207,12 @@ Our segmentation-guided diffusion model generates a more faithful reconstruction
     </tr>
 </table>
 
-Observation
+Observations
 - Using an additional dataset, whether it is an open-sourced dataset or a synthetic dataset, helps improve the training of YOLOv8-Seg.
 - However, you might sample high-quality or low-quality additional datasets from open-sourced databases without careful engineering. For instance, using the Washington dataset only slightly improves the F1 score compared to using the BEGC 2024 dataset alone. On the other hand, using the Las Vegas dataset significantly improves the F1 score, achieving the top F1 score among all methods.
 - On the other hand, using our diffusion augmentation, we can generate a synthetic dataset to train YOLOv8-Seg without an additional dataset (which means no additional manual annotation is required). Using BEGC2024 + synthetic dataset, our YOLOv8-Seg model achieved an F1 score that is significantly higher than the baseline and close to our top-1 score (using the Las Vegas dataset) and the second-place solution.
 
-## Limitation
+## Limitations
 1. The segmentation mask generated using the LoveDA's [pretrained hrnetw32](https://drive.google.com/drive/folders/1xFn1d8a4Hv4il52hLCzjEy_TY31RdRtg?usp=sharing) is not perfect. In fact, it missed a lot of segmentation, most likely due to the different data distributions between the LoveDA dataset and the IEEE BEGC2024 dataset. However, it is still better than nothing. Currently, this is the best pretrained model that can at least segment the IEEE BEGC2024 dataset at an acceptable level. Feel free to try other/better segmentation models!
 2. Due to resource constraints, we are only able to train our diffusion model using a batch size of 2 (accumulated to a batch size of 16) with a 256 image size. We suggest those interested in trying our code use a better GPU with higher RAM to train the model using a higher batch size and higher image resolution.
 3. There might be class imbalance for the land cover segmentation mask, which could affect the training of the segmentation-guided diffusion model. Future work may explore how to mitigate this via adaptive sampling or upsampling.
