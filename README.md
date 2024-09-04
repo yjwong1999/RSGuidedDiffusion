@@ -163,7 +163,7 @@ MASK_FOLDER
 
 ![Comparison](https://github.com/DoubleY-BEGC2024/RSGuidedDiffusion/blob/main/assets/Ours%20vs%20Seg2Sat.png?raw=true)
 
-Our segmentation-guided diffusion model generates a more faithful reconstruction of the buildings’ shape and texture, with the buildings generated at the precise location, as opposed to [Seg2Sat](https://github.com/RubenGres/Seg2Sat).
+Our segmentation-guided diffusion model generates a more faithful reconstruction of the buildings’ shape and texture, with the buildings generated at the precise location, as opposed to [Seg2Sat](https://github.com/RubenGres/Seg2Sat). Please note that Seg2Sat images looks clearer because it is trained using 512 x 512 image resolution, while our segmentation-guided diffusion model is trained with 256 x 256 image resolution due to GPU resources contraints. 
 
 ## Limitation
 1. The segmentation mask generated using the LoveDA's [pretrained hrnetw32](https://drive.google.com/drive/folders/1xFn1d8a4Hv4il52hLCzjEy_TY31RdRtg?usp=sharing) is not perfect. In fact, it missed a lot of segmentation, most likely due to the different data distributions between the LoveDA dataset and the IEEE BEGC2024 dataset. However, it is still better than nothing. Currently, this is the best pretrained model that can at least segment the IEEE BEGC2024 dataset at an acceptable level. Feel free to try other/better segmentation models!
