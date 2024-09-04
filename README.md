@@ -167,14 +167,50 @@ Our segmentation-guided diffusion model generates a more faithful reconstruction
 
 ## Using the Synthetic Data to train YOLOv8-Seg
 
-| Category               | 0.7    | 0.75   | 0.8    | 0.85   | 0.9    | 0.95   |
-|------------------------|--------|--------|--------|--------|--------|--------|
-| No extra dataset       | 0.66331|        |        |        |        |        |
-| Washington dataset     | 0.67153| 0.67692|        |        | 0.74835| 0.86632|
-| Las Vegas dataset      | 0.70326| 0.69266| 0.68618| 0.72133| 0.76599| 0.89711|
-| Diffusion Augmentation | 0.68096| 0.69353| 0.71075| 0.7505 |        | 0.8886 |
-| Top 2                  |        |        |        |        | 0.68453|        |
-| Top 3                  |        |        |        |        | 0.60649|        |
+<table border="1">
+    <tr>
+        <th></th>
+        <th colspan="2">F1 Score</th>
+    </tr>
+    <tr>
+        <th></th>
+        <th>Public</th>
+        <th>Private</th>
+    </tr>
+    <tr>
+        <td>No extra dataset</td>
+        <td>0.64926</td>
+        <td>0.66331</td>
+    </tr>
+    <tr>
+        <td>Washington dataset</td>
+        <td>0.65961</td>
+        <td>0.67153</td>
+    </tr>
+    <tr>
+        <td>Las Vegas dataset</td>
+        <td>0.68627</td>
+        <td>0.70326</td>
+    </tr>
+    <tr>
+        <td>Diffusion Augmentation</td>
+        <td>0.67189</td>
+        <td>0.68096</td>
+    </tr>
+    <tr>
+        <td>Top-2</td>
+        <td>0.6813</td>
+        <td>0.68453</td>
+    </tr>
+    <tr>
+        <td>Top-3</td>
+        <td>0.59314</td>
+        <td>0.60649</td>
+    </tr>
+</table>
+
+
+
 
 <table border="1">
     <tr>
