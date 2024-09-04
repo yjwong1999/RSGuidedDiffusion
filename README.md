@@ -113,7 +113,7 @@ CUDA_VISIBLE_DEVICES=0 python3 main.py \
 ```
 
 ## Download Pretrained Model (prefered)
-Download via curl command, or manually via [this link]()
+Download via curl command, or manually via [this link](https://www.dropbox.com/scl/fi/86i7mvr3fe1rkgejdewcj/ddim-BEGC-256-segguided.zip?rlkey=eugkdfero832mecdu9mdk0fio&st=n7tixbaa&dl=0)
 ```bash
 curl -L -o "ddim-BEGC-256-segguided.zip" "https://www.dropbox.com/scl/fi/86i7mvr3fe1rkgejdewcj/ddim-BEGC-256-segguided.zip?rlkey=eugkdfero832mecdu9mdk0fio&st=k245vc5h&dl=0"
 ```
