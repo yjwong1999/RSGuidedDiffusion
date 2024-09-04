@@ -169,11 +169,10 @@ Our segmentation-guided diffusion model generates a more faithful reconstruction
 
 <table border="1">
     <tr>
-        <th></th>
+        <th rowspan=2></th>
         <th colspan="2">F1 Score</th>
     </tr>
     <tr>
-        <th></th>
         <th>Public</th>
         <th>Private</th>
     </tr>
