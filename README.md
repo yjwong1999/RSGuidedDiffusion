@@ -197,12 +197,12 @@ Our segmentation-guided diffusion model generates a more faithful reconstruction
         <td>0.68096</td>
     </tr>
     <tr>
-        <td>Second place</td>
+        <td>Second place (unknown model/dataset)</td>
         <td>0.6813</td>
         <td>0.68453</td>
     </tr>
     <tr>
-        <td>Third place</td>
+        <td>Third place (unknown model/dataset)</td>
         <td>0.59314</td>
         <td>0.60649</td>
     </tr>
