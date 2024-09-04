@@ -177,32 +177,32 @@ Our segmentation-guided diffusion model generates a more faithful reconstruction
         <th>Private</th>
     </tr>
     <tr>
-        <td>No extra dataset</td>
+        <td>BEGC2024 dataset</td>
         <td>0.64926</td>
         <td>0.66331</td>
     </tr>
     <tr>
-        <td>Washington dataset</td>
+        <td>BEGC2024 dataset + Washington dataset</td>
         <td>0.65961</td>
         <td>0.67153</td>
     </tr>
     <tr>
-        <td>Las Vegas dataset</td>
+        <td>BEGC2024 dataset + Las Vegas dataset</td>
         <td>0.68627</td>
         <td>0.70326</td>
     </tr>
     <tr>
-        <td>Diffusion Augmentation</td>
+        <td>BEGC2024 dataset + Diffusion Augmentation</td>
         <td>0.67189</td>
         <td>0.68096</td>
     </tr>
     <tr>
-        <td>Top-2</td>
+        <td>Second place</td>
         <td>0.6813</td>
         <td>0.68453</td>
     </tr>
     <tr>
-        <td>Top-3</td>
+        <td>Third place</td>
         <td>0.59314</td>
         <td>0.60649</td>
     </tr>
