@@ -176,6 +176,78 @@ Our segmentation-guided diffusion model generates a more faithful reconstruction
 | Top 2                  |        |        |        |        | 0.68453|        |
 | Top 3                  |        |        |        |        | 0.60649|        |
 
+<table border="1">
+    <tr>
+        <th>Category</th>
+        <th>Score 1</th>
+        <th>Score 2</th>
+        <th>Score 3</th>
+        <th>Score 4</th>
+        <th>Score 5</th>
+        <th>Score 6</th>
+    </tr>
+    <tr>
+        <td>Private Score</td>
+        <td>0.7</td>
+        <td>0.75</td>
+        <td>0.8</td>
+        <td>0.85</td>
+        <td>0.9</td>
+        <td>0.95</td>
+    </tr>
+    <tr>
+        <td>No extra dataset</td>
+        <td>0.66331</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Washington dataset</td>
+        <td>0.67153</td>
+        <td>0.67692</td>
+        <td>0.74835</td>
+        <td>0.86632</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Las Vegas dataset</td>
+        <td>0.70326</td>
+        <td>0.69266</td>
+        <td>0.68618</td>
+        <td>0.72133</td>
+        <td>0.76599</td>
+        <td>0.89711</td>
+    </tr>
+    <tr>
+        <td>Diffusion Augmentation</td>
+        <td>0.68096</td>
+        <td>0.69353</td>
+        <td>0.71075</td>
+        <td>0.7505</td>
+        <td>0.8886</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Top 2</td>
+        <td>0.68453</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Top 3</td>
+        <td colspan="6">0.60649</td>
+    </tr>
+</table>
+
+
+
 
 ## Limitation
 1. The segmentation mask generated using the LoveDA's [pretrained hrnetw32](https://drive.google.com/drive/folders/1xFn1d8a4Hv4il52hLCzjEy_TY31RdRtg?usp=sharing) is not perfect. In fact, it missed a lot of segmentation, most likely due to the different data distributions between the LoveDA dataset and the IEEE BEGC2024 dataset. However, it is still better than nothing. Currently, this is the best pretrained model that can at least segment the IEEE BEGC2024 dataset at an acceptable level. Feel free to try other/better segmentation models!
