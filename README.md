@@ -179,21 +179,16 @@ Our segmentation-guided diffusion model generates a more faithful reconstruction
 <table border="1">
     <tr>
         <th>Category</th>
-        <th>Score 1</th>
-        <th>Score 2</th>
-        <th>Score 3</th>
-        <th>Score 4</th>
-        <th>Score 5</th>
-        <th>Score 6</th>
+        <th colspan="6">NMS IoU Threshold</th>
     </tr>
     <tr>
         <td>Private Score</td>
-        <td>0.7</td>
-        <td>0.75</td>
-        <td>0.8</td>
-        <td>0.85</td>
-        <td>0.9</td>
-        <td>0.95</td>
+        <th>0.70</th>
+        <th>0.75</th>
+        <th>0.80</th>
+        <th>0.85</th>
+        <th>0.90</th>
+        <th>0.95</th>
     </tr>
     <tr>
         <td>No extra dataset</td>
