@@ -46,7 +46,7 @@ pip install safetensors==0.4.4
 Setup the dataset
 ```bash
 # Make sure you have your Kaggle authentication
-# {"username":"yjwong99","key":"5708a20c5643d05827b398dce05031bc"}
+# {"username":<USERNAME>,"key":<YOUR KEY>}
 
 # run the code
 python setup_data.py
