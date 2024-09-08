@@ -92,7 +92,7 @@ CUDA_VISIBLE_DEVICES=0 python3 main.py \
     --num_segmentation_classes 7 \
     --train_batch_size 2 \
     --eval_batch_size 2 \
-    --num_epochs 100
+    --num_epochs 200
 ```
 
 Test Diffusion Model
@@ -105,7 +105,7 @@ CUDA_VISIBLE_DEVICES=0 python3 main.py \
     --num_img_channels 3 \
     --dataset BEGC \
     --eval_batch_size 1 \
-    --eval_sample_size 100 \
+    --eval_sample_size 1584 \
     --seg_dir ${current_dir}/segmentation/diffusion_data/mask \
     --segmentation_guided \
     --segmentation_channel_mode single \
