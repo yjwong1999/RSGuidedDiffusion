@@ -19,7 +19,7 @@ conda activate diffusion
 Clone this repo
 ```bash
 # clone this repo
-git clone https://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@github.com/DoubleY-BEGC2024/RSGuidedDiffusion.git
+git clone https://github.com/yjwong1999/RSGuidedDiffusion.git
 cd RSGuidedDiffusion
 ```
 
