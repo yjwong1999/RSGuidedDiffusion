@@ -121,6 +121,12 @@ Download via curl command, or manually via [this link](https://www.dropbox.com/s
 curl -L -o "ddim-BEGC-256-segguided.zip" "https://www.dropbox.com/scl/fi/86i7mvr3fe1rkgejdewcj/ddim-BEGC-256-segguided.zip?rlkey=eugkdfero832mecdu9mdk0fio&st=k245vc5h&dl=0"
 ```
 
+## Download the Generated Synthetic Dataset (prefered)
+Download via curl command, or manually via [this link](https://www.dropbox.com/scl/fi/slq3qcg0qhzpj9cc22ws4/generated_images.zip?rlkey=npgj3v4ki6o7sogrca742ubt3&st=fjuxt1vn&dl=0)
+```bash
+curl -L -o "generated_images.zip" "https://www.dropbox.com/scl/fi/slq3qcg0qhzpj9cc22ws4/generated_images.zip?rlkey=npgj3v4ki6o7sogrca742ubt3&st=fjuxt1vn&dl=0"
+```
+
 ## Optional: Custom Dataset
 Please put your training images in some dataset directory `DATA_FOLDER`, organized into train, validation and test split subdirectories. The images should be in a format that PIL can read (e.g. `.png`, `.jpg`, etc.). For example:
 ``` 
