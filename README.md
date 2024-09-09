@@ -242,3 +242,15 @@ We thank the following works for the inspiration of our repo!
 ## Citations
 Please citate our paper if you use any of our model or dataset. Really appreciate it! 
 (The preprint will be released soon)
+
+```
+@INPROCEEDINGS{10174362,
+  author={Wong, Yi Jie and Khor, Yin-Loon and Tham, Mau-Luen},
+  booktitle={}, 
+  title={}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={},
+  doi={}
+```
