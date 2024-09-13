@@ -1,6 +1,6 @@
 # Segmentation-Guided Diffusion Models for Label-Efficient Fine-Tuning for Remote Sensing Building Segmentation
 
-https://colab.research.google.com/drive/1nwClwVQKWVAojyBgxPu51olI3NcKxmpu?usp=sharing
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1nwClwVQKWVAojyBgxPu51olI3NcKxmpu?usp=sharing)
 
 #### By [Yi Jie WONG](https://github.com/yjwong1999) et al
 
