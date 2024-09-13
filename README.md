@@ -218,6 +218,8 @@ Our segmentation-guided diffusion model generates a more faithful reconstruction
     </tr>
 </table>
 
+Please refer [this repo](https://github.com/yjwong1999/RSBuildingExtraction) to see how we can use Microsoft Building Footprint dataset to enhance the F1-score of our YOLO instance segmentation model.
+
 Observations
 - Using an additional dataset, whether it is an open-sourced dataset or a synthetic dataset, helps improve the training of YOLOv8-Seg.
 - However, you might sample high-quality or low-quality additional datasets from open-sourced databases without careful engineering. For instance, using the Washington dataset only slightly improves the F1 score compared to using the BEGC 2024 dataset alone. On the other hand, using the Las Vegas dataset significantly improves the F1 score, achieving the top F1 score among all methods.
