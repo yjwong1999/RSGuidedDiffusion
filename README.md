@@ -188,23 +188,23 @@ Our segmentation-guided diffusion model generates a more faithful reconstruction
     <td>Private</td>
   </tr>
   <tr>
-    <td>YOLOv8m-seq + BEGC 2024</td>
+    <td>YOLOv8m-seg + BEGC 2024</td>
     <td rowspan=4>110.2</td>
     <td>0.64926</td>
     <td>0.66531</td>
   </tr>
   <tr>
-    <td>YOLOv8m-seq + BEGC 2024 + Redmond Dataset</td>
+    <td>YOLOv8m-seg + BEGC 2024 + Redmond Dataset</td>
     <td>0.65951</td>
     <td>0.67133</td>
   </tr>
   <tr>
-    <td>YOLOv8m-seq + BEGC 2024 + Las Vegas Dataset</td>
+    <td>YOLOv8m-seg + BEGC 2024 + Las Vegas Dataset</td>
     <td>0.68627</td>
     <td>0.70326</td>
   </tr>
   <tr>
-    <td>YOLOv8m-seq + BEGC 2024 + Diffusion Augmentation</td>
+    <td>YOLOv8m-seg + BEGC 2024 + Diffusion Augmentation</td>
     <td>0.67189</td>
     <td>0.68096</td>
   </tr>
