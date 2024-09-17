@@ -207,12 +207,12 @@ Our segmentation-guided diffusion model generates a more faithful reconstruction
         <td>0.68096</td>
     </tr>
     <tr>
-        <td>Second place (unknown model/dataset)</td>
+        <td>Second place (RTMDet-x + Alabama Building Segmentation dataset)</td>
         <td>0.6813</td>
         <td>0.68453</td>
     </tr>
     <tr>
-        <td>Third place (unknown model/dataset)</td>
+        <td>Third place (Generalized RCNN + No extra dataset)</td>
         <td>0.59314</td>
         <td>0.60649</td>
     </tr>
