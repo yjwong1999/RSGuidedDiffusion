@@ -10,7 +10,7 @@ This code is part of our solution for [2024 IEEE BigData Cup: Building Extractio
 
 ## Instructions
 
-We provided a [Jupyter Notebook](https://github.com/yjwong1999/RSGuidedDiffusion/blob/main/BEGC2024%20Segmentation%20Guided%20Diffusion%20Model.ipynb) for easy reimplementation of our method. The entire notebook is run via lightning.ai studio. You might need to edit the filepath if run it on colab. Otherwise, you should be able to run it even in your local Jupyter notebook or in lightning.ai studio. Otherwise, you can follow the instructions below using command prompt.
+We provided a [Jupyter Notebook](https://github.com/yjwong1999/RSGuidedDiffusion/blob/main/BEGC2024_Segmentation_Guided_Diffusion_Model.ipynb) for easy reimplementation of our method. The entire notebook is run via lightning.ai studio. You might need to edit the filepath if run it on colab. Otherwise, you should be able to run it even in your local Jupyter notebook or in lightning.ai studio. Otherwise, you can follow the instructions below using command prompt.
 
 Conda environment
 ```bash
