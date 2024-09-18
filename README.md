@@ -226,7 +226,7 @@ Please refer [this repo](https://github.com/yjwong1999/RSBuildingExtraction) to 
 
 Observations
 - Using an additional dataset, whether it is an open-sourced dataset or a synthetic dataset, helps improve the training of YOLOv8-Seg.
-- However, you might sample high-quality or low-quality additional datasets from open-sourced databases without careful engineering. For instance, using the Washington dataset only slightly improves the F1 score compared to using the BEGC 2024 dataset alone. On the other hand, using the Las Vegas dataset significantly improves the F1 score, achieving the top F1 score among all methods.
+- However, you might sample high-quality or low-quality additional datasets from open-sourced databases without careful engineering. For instance, using the Redmond dataset only slightly improves the F1 score compared to using the BEGC 2024 dataset alone. On the other hand, using the Las Vegas dataset significantly improves the F1 score, achieving the top F1 score among all methods.
 - On the other hand, using our diffusion augmentation, we can generate a synthetic dataset to train YOLOv8m-Seg without needing an additional dataset (which means no extra manual annotation is required). Using BEGC2024 combined with the synthetic dataset, our YOLOv8m-Seg model achieved an F1 score that is significantly higher than the baseline and close to our top-1 score (using the Las Vegas dataset) and the 2nd-place solution.
 - Note that the 2nd-place solution uses a bigger model (higher FLOPs) with an additional dataset to reach a high F1 score, whereas our diffusion augmentation pipeline allows our model (lower FLOPs) to achieve a surprisingly close F1 score without an additional dataset.
 
