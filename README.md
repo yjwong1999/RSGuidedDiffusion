@@ -248,22 +248,19 @@ We thank the following works for the inspiration of our repo!
 3. Segmentation-Guided Diffusion [code](https://github.com/mazurowski-lab/segmentation-guided-diffusion)
 4. COCO2YOLO format [original code](https://github.com/tw-yshuang/coco2yolo), [modified code](https://github.com/yjwong1999/coco2yolo)
 
-## Citations
-Please citate our paper if you use any of our model or dataset. Really appreciate it! 
-(The preprint will be released soon)
+## Cite this repository
 
-<!-- 
-
+Our paper has been accepted by IEEE BigData 2024! Please cite our preprint if this repo helps your research.
 ```
-@INPROCEEDINGS{10174362,
-  author={Wong, Yi Jie and Khor, Yin-Loon and Tham, Mau-Luen},
-  booktitle={}, 
-  title={}, 
-  year={2024},
-  volume={},
-  number={},
-  pages={},
-  doi={}
+@article{Wong2024,
+   author = {Yi Jie Wong and Yin-Loon Khor and Mau-Luen Tham and Ban-Hoe Kwan and Anissa Mokraoui and Yoong Choon Chang},
+   doi = {10.36227/TECHRXIV.173091008.80781383/V1},
+   institution = {Techrxiv},
+   journal = {Authorea Preprints},
+   month = {11},
+   publisher = {Authorea},
+   title = {Cross-City Building Instance Segmentation: From More Data to Diffusion-Augmentation},
+   url = {https://www.techrxiv.org/users/844381/articles/1235896-cross-city-building-instance-segmentation-from-more-data-to-diffusion-augmentation?commit=b5f5b583761fbb4a7a1e5c99b9c3dae7c50f11c7},
+   year = {2024},
+}
 ```
-
--->
