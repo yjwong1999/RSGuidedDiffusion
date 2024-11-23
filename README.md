@@ -257,6 +257,5 @@ Our paper has been accepted by IEEE BigData 2024! Please cite our paper if this 
 title = {Cross-City Building Instance Segmentation: From More Data to Diffusion-Augmentation},
 author = {Yi Jie Wong and Yin-Loon Khor and Mau-Luen Tham and Ban-Hoe Kwan and Anissa Mokraoui and Yoong Choon Chang},
 booktitle={2024 IEEE International Conference on Big Data (Big Data)},
-year={2024},
-month = {12}}
+year={2024}}
 ```
