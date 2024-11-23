@@ -250,17 +250,13 @@ We thank the following works for the inspiration of our repo!
 
 ## Cite this repository
 
-Our paper has been accepted by IEEE BigData 2024! Please cite our preprint if this repo helps your research.
+Our paper has been accepted by IEEE BigData 2024! Please cite our paper if this repo helps your research. The preprint is available [here](https://doi.org/10.36227/techrxiv.173091008.80781383/v1)
+
 ```
-@article{Wong2024,
-   author = {Yi Jie Wong and Yin-Loon Khor and Mau-Luen Tham and Ban-Hoe Kwan and Anissa Mokraoui and Yoong Choon Chang},
-   doi = {10.36227/TECHRXIV.173091008.80781383/V1},
-   institution = {Techrxiv},
-   journal = {Authorea Preprints},
-   month = {11},
-   publisher = {Authorea},
-   title = {Cross-City Building Instance Segmentation: From More Data to Diffusion-Augmentation},
-   url = {https://www.techrxiv.org/users/844381/articles/1235896-cross-city-building-instance-segmentation-from-more-data-to-diffusion-augmentation?commit=b5f5b583761fbb4a7a1e5c99b9c3dae7c50f11c7},
-   year = {2024},
-}
+@InProceedings{Wong2024,
+title = {Cross-City Building Instance Segmentation: From More Data to Diffusion-Augmentation},
+author = {Yi Jie Wong and Yin-Loon Khor and Mau-Luen Tham and Ban-Hoe Kwan and Anissa Mokraoui and Yoong Choon Chang},
+booktitle={2024 IEEE International Conference on Big Data (Big Data)},
+year={2024},
+month = {12}}
 ```
