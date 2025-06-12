@@ -251,7 +251,7 @@ We thank the following works for the inspiration of our repo!
 
 ## Cite this repository
 
-Our paper has been accepted by IEEE BigData 2024! Please cite our paper if this repo helps your research. The preprint is available [here](https://doi.org/10.36227/techrxiv.173091008.80781383/v1)
+Our paper has been accepted by IEEE BigData 2024! Please cite our paper if this repo helps your research. The preprint is available [here](https://doi.org/10.36227/techrxiv.173091008.80781383/v1). The final paper is available [here](https://doi.org/10.1109/BigData62323.2024.10825702).
 
 ```
 @InProceedings{Wong2024,
